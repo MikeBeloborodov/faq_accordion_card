@@ -2,7 +2,7 @@ const $ = (selector) => document.querySelector(selector);
 const $$ = (selector) => document.querySelectorAll(selector);
 
 const $$questionButtons = $$('.question-btn');
-let currentButton = undefined;
+let currentButton = $('#default_question');
 
 $$questionButtons.forEach((button) => {
   button.addEventListener('click', () => {

@@ -112,7 +112,6 @@ body {
 }
 
 .answer {
-  display: block;
   display: none;
   width: 100%;
   padding: 11px 20px 0 0;

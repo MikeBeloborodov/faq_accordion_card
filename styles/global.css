@@ -11,12 +11,8 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Kumbh sans';
+  font-family: 'Kumbh Sans', sans-serif;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 h1,
@@ -36,4 +32,5 @@ blockquote {
 
 img, svg {
   width: 100%;
+  height: auto;
 }

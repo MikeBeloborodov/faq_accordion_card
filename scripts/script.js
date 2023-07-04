@@ -1,10 +1,10 @@
 const $ = (selector) => document.querySelector(selector);
 const $$ = (selector) => document.querySelectorAll(selector);
 
-const $$questionBtns = $$('.question-btn');
+const $$questionButtons = $$('.question-btn');
 let currentButton = undefined;
 
-$$questionBtns.forEach((button) => {
+$$questionButtons.forEach((button) => {
   button.addEventListener('click', () => {
 
     // remove old styles

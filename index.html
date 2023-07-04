@@ -21,16 +21,28 @@
     <main>
       <section class="faq-accordion">
         <div class="faq-accordion__image-container">
-          <img
-            class="faq-accordion__illustration"
-            src="images/illustration-woman-online-mobile.svg"
-            alt="Vector illustration of a woman, working in front of a big monitor."
-          />
-          <img
-            class="faq-accordion__illustration-background"
-            src="images/bg-pattern-mobile.svg"
-            alt=""
-          />
+          <picture class="faq-accordion__illustration-picture">
+            <source
+              srcset="images/illustration-woman-online-desktop.svg"
+              media="(min-width: 950px)"
+            />
+            <img
+              class="faq-accordion__illustration"
+              src="images/illustration-woman-online-mobile.svg"
+              alt="Vector illustration of a woman, working in front of a big monitor."
+            />
+          </picture>
+          <picture class="faq-accordion__illustration-background-picture">
+            <source
+              srcset="images/bg-pattern-desktop.svg"
+              media="(min-width: 950px)"
+            />
+            <img
+              class="faq-accordion__illustration-background"
+              src="images/bg-pattern-mobile.svg"
+              alt=""
+            />
+          </picture>
         </div>
         <div class="faq-accordion__text-container">
           <h2 class="faq-accordion__title">FAQ</h2>
@@ -48,11 +60,7 @@
             <li class="faq-accordion__question-item">
               <button class="question-btn">
                 What is the maximum file upload size?
-                <img
-                  class="arrow"
-                  src="images/icon-arrow-down.svg"
-                  alt=""
-                />
+                <img class="arrow" src="images/icon-arrow-down.svg" alt="" />
               </button>
               <span class="answer">
                 No more than 2GB. All files in your account must fit your
@@ -92,6 +100,7 @@
           </ul>
         </div>
       </section>
+      <img class="box-image" src="images/illustration-box-desktop.svg" alt="Vector picture of a box">
     </main>
     <script src="scripts/script.js"></script>
   </body>
